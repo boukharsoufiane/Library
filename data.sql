@@ -2,6 +2,7 @@ CREATE TABLE membre (
 id_membre INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 first_name VARCHAR(50) NOT NULL,
 last_name VARCHAR(50) NOT NULL,
+username VARCHAR(50) NOT NULL,
 email VARCHAR(30) NOT NULL,
 phone VARCHAR(13) NOT NULL,
 type_membre VARCHAR(30) NOT NULL,
@@ -16,9 +17,9 @@ id_ouvrage INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 name_ouvrage VARCHAR(50) NOT NULL,
 state_ouvrage VARCHAR(50) NOT NULL,
 date_achat DATE NOT NULL,
+date_edition DATE NOT NULL,
 type_ouvrage VARCHAR(50) NOT NULL,
 pages_ouvrage INT NOT NULL,
-state_reservation VARCHAR(50) NOT NULL,
 image_main VARCHAR(1000) NOT NULL
 );
 
